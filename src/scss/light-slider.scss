@@ -1,13 +1,22 @@
-.awssld {
-  --organic-arrow-thickness: 4px;
-  --organic-arrow-height: 40px;
-  --slider-height-percentage: 60%;
-  --loader-bar-color: #656565;
-  --loader-bar-height: 6px;
-  --control-bullet-color: #8c8c8c;
-  --control-bullet-active-color: #8c8c8c;
-  --content-background-color: #8c8c8c;
-}
+$root-element: 'awssld';
+$cos45: 0.7071;
+$transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
+$slider-height-percentage: 60%;
+$slider-transition-duration: 575ms;
+$organic-arrow-color: #D7CAAA;
+$organic-arrow-thickness: 4px;
+$organic-arrow-height: 40px;
+$organic-arrow-border-radius: 0;
+$control-button-width: 10%;
+$control-button-height: 25%;
+$control-button-opacity: 0.5;
+$control-button-hover-opacity: 0.75;
+$control-button-background: transparent;
+$loader-bar-color:#BFAA76;
+$loader-bar-height: 6px;
+$control-bullet-color: #D7CAAA;
+$control-bullet-active-color: #D7CAAA;
+$content-background-color: #D7CAAA;
 
 %fill-parent {
   display: block;
@@ -109,7 +118,8 @@
     justify-content: center;
     > img,
     > video {
-      height: 100%;
+      width: 100%;
+      position: absolute;
       top: 0;
       left: 0;
     }

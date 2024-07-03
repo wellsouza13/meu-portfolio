@@ -3,8 +3,8 @@ import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
-import '../scss/light-slider.css';
-import '../scss/dark-slider.css';
+import '../scss/light-slider.scss';
+import '../scss/dark-slider.scss';
 
 interface Technology {
     class: string;
